@@ -1,3 +1,5 @@
+const scoreEl = document.getElementById("result");
+
 function initField() {
   // создает игровое поле;
   for (let i = 0; i < fieldSize; i++) {
