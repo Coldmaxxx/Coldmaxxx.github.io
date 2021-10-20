@@ -1,20 +1,20 @@
-document.addEventListener("keydown", setDirection);
+document.addEventListener("keydown", handleKeydown);
 
 restartBtn.addEventListener("click", handleClick);
 
-function setDirection(event) {
+function handleKeydown(event) {
   // обрабатывает нажатие клавиатуры;
   if (event.code === "Enter") {
     finishGame();
     startNewGame();
   } else if (event.code === "ArrowUp" && direction !== "down") {
-    direction = "up";
+    setDirection("up");
   } else if (event.code === "ArrowDown" && direction !== "up") {
-    direction = "down";
+    setDirection("down");
   } else if (event.code === "ArrowLeft" && direction !== "right") {
-    direction = "left";
+    setDirection("left");
   } else if (event.code === "ArrowRight" && direction !== "left") {
-    direction = "right";
+    setDirection("right");
   }
 }
 
