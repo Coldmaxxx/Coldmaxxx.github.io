@@ -1,8 +1,8 @@
-document.addEventListener("keydown", handleKeydown);
+document.addEventListener("keydown", setDirection);
 
 restartBtn.addEventListener("click", handleClick);
 
-function handleKeydown(event) {
+function setDirection(event) {
   // обрабатывает нажатие клавиатуры;
   if (event.code === "Enter") {
     finishGame();
