@@ -141,3 +141,7 @@ function selectSnakeTurnElPic() {
   } else turnPic = undefined;
   return turnPic;
 }
+
+function setDirection(value) {
+  direction = value;
+}
