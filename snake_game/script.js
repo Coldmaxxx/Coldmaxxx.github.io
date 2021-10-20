@@ -1,4 +1,3 @@
-const scoreEl = document.getElementById("result");
 const fieldSize = 22; // размер игрового поля;
 const speed = 500; // скорость движения змейки;
 const snakeBodyLength = 4; // начальная длина змейки;
